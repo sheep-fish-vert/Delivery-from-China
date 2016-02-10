@@ -1,3 +1,107 @@
-<section>
+<section id='zayavka'>
+    <div class="zayavka-wrap">
+        <div class="conteiner-zayavka">
+            <div class="mbox">
+                <div class="convert-zayavka">
+                    <div class="title-text">
+                        <h2>Заявка на расчет стоимости доставки</h2>
+                    </div>
+                    <div class="convert-form">
+                        <form action="ajax.php" name="zayavka" class="zayavka cfix" enctype="multipart/form-data">
+                            <div class="mainn-block-form cfix">
+                                <div class="contact-form-item row-part1">
+                                    <div class="form_row">
+                                        <div class="form_input spec-bg-1">
+                                            <input type="text" name="contact_name" required="required" value="" placeholder="ФИО">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contact-form-item row-part2">
+                                    <div class="form_row">
+                                        <div class="form_input spec-bg-2">
+                                            <input type="text" name="company" required="required" value="" placeholder="Компания">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contact-form-item row-part1">
+                                    <div class="form_row">
+                                        <div class="form_input spec-bg-3">
+                                            <input type="text" name="contact_phone" required="required" placeholder="Ваш номер телефона" class="tel-mask">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contact-form-item row-part2">
+                                    <div class="form_row">
+                                        <div class="form_input spec-bg-4">
+                                            <input type="email" name="email" required="required" placeholder="E-mail">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-form-item row-part1">
+                                <div class="form_row">
+                                    <div class="form_input spec-bg-5">
+                                        <input type="text" name="netto" required="required" placeholder="Вес нетто (кг)" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-form-item row-part2">
+                                <div class="form_row">
+                                    <div class="form_input spec-bg-6">
+                                        <input type="text" name="obem" required="required" placeholder="Объем (м.куб)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-form-item row-part1">
+                                <div class="form_row">
+                                    <div class="form_input spec-bg-7">
+                                        <input type="text" name="from-send" required="required" placeholder="Пункт отправления">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-form-item row-part2">
+                                <div class="form_row">
+                                    <div class="form_input spec-bg-8">
+                                        <input type="text" name="to-send" required="required" placeholder="Пункт прибытия">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-form-item ">
+                                <div class="form_row">
+                                    <div class="form_input spec-bg-9">
+                                        <input type="text" name="info"  placeholder="Информация о грузе">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-form-item">
+                                <div class="form_row">
+                                    <div class="form_input spec-bg-10">
+                                        <select class="selectable-trip" >
+                                            <option value="" disabled selected hidden class="hide-placeholder">Способ доставки</option>
+                                            <option>Доставка сборным грузом авто + ж/д ( 20-25 дней )</option>
+                                            <option>Доставка сборным грузом авия ( 10-14 дней )</option>
+                                            <option>Доставка контейнером ( 30-40 дней )</option>
+                                            <option>Экспресс-доставка ( 3-5 дней )</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-form-item cfix">
+                                <input type="file" name="file">
+                                <a class="add-file-config">Прикрепить файл</a>
+                            </div>
+                            <div class="contact-form-row cfix">
+                                <div class="contact-form-item nerd-iye">
+                                    <button type="submit" class="send">
+                                        <span>Отправить</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </section>

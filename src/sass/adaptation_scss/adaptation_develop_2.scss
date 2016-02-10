@@ -8,6 +8,13 @@
 
 }
 @media screen and (max-width: 1280px){
+    #zayavka:before{left: 0;}
+    #zayavka:after{right: 0;}
+    .why-we-wrap .row-con { padding: 0;
+        .item { width: 40%; margin: 20px calc(20%/4);}
+    }
+    .why-we-wrap .row-con-3-items .item:first-child { margin-left: calc(20%/4);}
+    .why-we-wrap .row-con-3-items .item:last-child { margin-left: calc(60%/2);}
 
 }
 @media screen and (max-width: 1024px){
@@ -17,16 +24,50 @@
 
 }
 @media screen and (max-width: 767px){
-    #block2 .conteiner .item { float: none; width: 80%; margin: 0 auto; padding-bottom: 40px;
-        .after-text { font-size: 16px;}
+    .hand-of-god .conteiner {
+        .row-4-items .item { float: none; width: 80%; margin: 0 auto; padding-bottom: 40px;}
+        .item { float: none; width: 80%; margin: 0 auto; padding-bottom: 40px;
+            .after-text { font-size: 16px;}
+        }
     }
+    #zayavka:before{display: none;}
+    #zayavka:after{display: none;}
+    .mbox{padding: 0 10px;}
+    #zayavka .conteiner-zayavka .convert-form{
+        .row-part1 { float: none; max-width: 100%;}
+        .row-part2 { float: none; max-width: 100%;}
+        .mainn-block-form { padding-bottom: 0px;}
+        .contact-form-item .form_row .form_input{
+            .jq-selectbox__dropdown ul li {margin-left: 44px;}
+            .selectable-trip {height: 80px;}
+            .jq-selectbox__trigger .jq-selectbox__trigger-arrow {top: 26px;}
+            .jq-selectbox__select {line-height: 40px; height: 80px;}
+            .jq-selectbox__select-text{width: calc(100% - 50px);}
+            .jq-selectbox__dropdown {top: 90px;}
+        }
+        .contact-form-item .form_row {
+            .spec-bg-10:after {height: 66px ;}
+            .spec-bg-10:before { top: 28px; }
+        }
+    }
+     #zayavka .conteiner-zayavka .convert-form .nerd-iye {padding-top: 0;}
 
+     .clients-wrap .client-row .item { width: 40%; margin: 0 5%; padding-top: 30px;}
+     .clients-wrap .client-row .item:last-child{margin: 0 30%;}
 }
+
 @media screen and (max-width: 666px){
+
+    .why-we-wrap .row-con { padding: 0;
+        .item { width: 80%; margin: 20px calc(20%/2);}
+    }
+    .why-we-wrap .row-con-3-items .item:first-child { margin: 20px calc(20%/2);}
+    .why-we-wrap .row-con-3-items .item:last-child { margin: 20px calc(20%/2);}
 
 }
 @media screen and (max-width: 479px){
-
+    .wrap-cit { padding-top: 30px;}
+    #zayavka .conteiner-zayavka .convert-form .contact-form-item a { width: 100%;}
 }
 @media screen and (max-width: 320px){
 

@@ -94,6 +94,47 @@ function validate(form, options){
     }
 }
 
+
+function validationCallDoc(form){
+
+  var thisForm = $(form);
+
+    $.ajax({
+        url: $(this).attr('action'),
+        type: "POST",
+        data: $(this).serialize(),
+        dataType: 'json',
+        success: function(response) {
+            thisForm.trigger("reset");
+            popNext();
+        }
+    });
+
+
+    function popNext(){
+        $.fancybox.open("#call_success",{
+            padding:0,
+            fitToView:false,
+            wrapCSS:"call-popup",
+            autoSize:true,
+            afterClose: function(){
+                $('form').trigger("reset");
+                clearTimeout(timer);
+            }
+        });
+        var timer = null;
+
+        timer = setTimeout(function(){
+            $('form').trigger("reset");
+            $.fancybox.close("#call_success");
+        },2000);
+
+
+    }
+}
+
+
+
 /*Отправка формы с вызовом попапа*/
 function validationCall(form){
 
@@ -158,7 +199,8 @@ function fancyboxForm(){
 }
 
 $(document).ready(function(){
-   validate('#call-popup .contact-form', {submitFunction:validationCall});
-   Maskedinput();
-   fancyboxForm();
+    validate('.zayavka', {submitFunction:validationCallDoc});
+    validate('#call-popup .contact-form', {submitFunction:validationCall});
+    Maskedinput();
+    fancyboxForm();
 });
