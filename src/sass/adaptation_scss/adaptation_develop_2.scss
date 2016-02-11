@@ -24,6 +24,29 @@
 
 }
 @media screen and (max-width: 767px){
+    .block-req .row-last .itog {margin: 0 auto; float: none;}
+    .calculus-wrap {background-image: none;}
+    .block-req .row .cell-text { padding-left: 10px; padding-right: 10px;}
+    .block-req .row .cell-num {padding-right: 10px;}
+
+
+    .slider-wrap .convert-slider .item figure .caption-block .texter {
+        .title-head {line-height: 24px; font-size: 18px;}
+        .after-text {font-size: 12px;}
+        .button-row a {font-size: 14px;line-height: 30px;}
+    }
+
+    .polosa-wrap .conteiner .items { width: 50%;}
+
+    .footer-wrap .topest-block { position: relative;
+        .item{float: none; text-align: center; width: 100%;
+            &:nth-child(1){position: absolute; top: 130px; }
+            &:nth-child(2){padding-bottom: 110px; }
+            .text-alone {text-align: center; padding-bottom: 20px; padding-top: 0px; }
+            .button { margin-bottom: 20px;}
+        }
+    }
+
     .hand-of-god .conteiner {
         .row-4-items .item { float: none; width: 80%; margin: 0 auto; padding-bottom: 40px;}
         .item { float: none; width: 80%; margin: 0 auto; padding-bottom: 40px;
@@ -57,6 +80,16 @@
 }
 
 @media screen and (max-width: 666px){
+    .calculus-wrap .conteiner .magik-disk-2 {max-width: 180px; top: 4px;  left: 45px; font-size: 12px;}
+    .calculus-wrap .conteiner .magik-disk {max-width: 180px; top: 14px;  left: 45px; font-size: 12px;}
+    .slider-wrap .convert-slider .item figure { position: relative; min-height: 300px;
+        .caption-block {width: calc(100% - 20px); position: absolute; top: 10px; left: 10px; right:10px; bottom: 10px;  background-color: rgba(255,255,255,0.8); z-index: 10;
+            .vargas{display: table;min-height: 300px;
+                .texter{display: table-cell; vertical-align: middle;}
+            }
+        }
+        .so-interesting{position: static; top: 0; padding-top: 0px;width: 100%;}
+    }
 
     .why-we-wrap .row-con { padding: 0;
         .item { width: 80%; margin: 20px calc(20%/2);}
@@ -66,6 +99,13 @@
 
 }
 @media screen and (max-width: 479px){
+
+    .slider-wrap .convert-slider .item figure .caption-block .texter .title-head {max-width: 300px;}
+    .slider-wrap .convert-slider .item figure .caption-block .texter .after-text {max-width: 300px;}
+    .slider-wrap .convert-slider .item figure .caption-block .texter .button-row a {font-size: 12px;}
+    .polosa-wrap .conteiner .items { width: 100%;
+        a{line-height: 60px;}
+    }
     .wrap-cit { padding-top: 30px;}
     #zayavka .conteiner-zayavka .convert-form .contact-form-item a { width: 100%;}
 }
