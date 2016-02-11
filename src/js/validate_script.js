@@ -97,13 +97,17 @@ function validate(form, options){
 
 function validationCallDoc(form){
 
-  var thisForm = $(form);
+    var thisForm = $(form);
+    var formData = new FormData(thisForm[0]);
+
+    formData.append('tax_file', thisForm.find('input[type=file]')[0].files[0]);
 
     $.ajax({
         url: $(this).attr('action'),
         type: "POST",
-        data: $(this).serialize(),
-        dataType: 'json',
+        data: formData,
+        contentType:false,
+        processData:false,
         success: function(response) {
             thisForm.trigger("reset");
             popNext();

@@ -22,12 +22,12 @@
     require 'class.phpmailer.php';
 
     $mail = new PHPMailer();
-    $mail->AddAddress('mail@mail.ru','');   // кому - адрес, Имя
+    $mail->AddAddress('dmitry1940@mail.ru','');   // кому - адрес, Имя
     $mail->IsHTML(true);                        // выставляем формат письма HTML
     $mail->Subject = $subject; // тема письма
     $mail->CharSet = "UTF-8";                   // кодировка
     $mail->Body = $mess;
-    if(isset($_FILES['file'])) {
+    if(isset($_FILES['file'])) { // file - имя файла
             if($_FILES['file']['error'] == 0){
             $mail->AddAttachment($_FILES['file']['tmp_name'], $_FILES['file']['name']);
         }
