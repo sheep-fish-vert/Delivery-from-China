@@ -103,7 +103,7 @@ function validationCallDoc(form){
     formData.append('tax_file', thisForm.find('input[type=file]')[0].files[0]);
 
     $.ajax({
-        url: $(this).attr('action'),
+        url: thisForm.attr('action'),
         type: "POST",
         data: formData,
         contentType:false,
@@ -119,7 +119,7 @@ function validationCallDoc(form){
         $.fancybox.open("#call_success",{
             padding:0,
             fitToView:false,
-            wrapCSS:"call-popup",
+            wrapCSS:"call-popup-success",
             autoSize:true,
             afterClose: function(){
                 $('form').trigger("reset");
@@ -165,7 +165,7 @@ function validationCall(form){
         $.fancybox.open("#call_success",{
             padding:0,
             fitToView:false,
-            wrapCSS:"call-popup",
+            wrapCSS:"call-popup-success",
             autoSize:true,
             afterClose: function(){
                 $('form').trigger("reset");
