@@ -137,7 +137,20 @@ function validationCallDoc(form){
     }
 }
 
+function calculatorLiloAndStich(form){
+    var thisForm = $(form);
+    var formSur = thisForm.serializeArray();
+    console.log(formSur[1].value);
 
+    var b3 = formSur[1].value;
+    var b4 = formSur[2].value;
+    var b5 = formSur[3].value;
+    var b6 = formSur[0].value;
+
+    var resultForm = (b3+b4)*b5/100+(b3+b4+(b3+b4)*b5/100)*b6/100 ;
+    $('.price-yop>span').html(resultForm);
+
+}
 
 /*Отправка формы с вызовом попапа*/
 function validationCall(form){
@@ -205,6 +218,17 @@ function fancyboxForm(){
 $(document).ready(function(){
     validate('.zayavka', {submitFunction:validationCallDoc});
     validate('#call-popup .contact-form', {submitFunction:validationCall});
+
+    validate('.calculus-form', {submitFunction:calculatorLiloAndStich});
+
     Maskedinput();
     fancyboxForm();
+
+    $('input[name=tammozhna]').keydown(function(){
+        $(this).val($(this).val().replace(/[^\d]/,''));
+    });
+    $('input[name=tammozhna]').keyup(function(){
+        $(this).val($(this).val().replace(/[^\d]/,''));
+    });
+
 });

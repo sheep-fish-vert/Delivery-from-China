@@ -111,8 +111,6 @@ input[type="file"]{ width: 0; opacity: 0;}
     }
 }
 
-.hidden-block {position: static;}
-
 
 .wrap-cit{width: 100%; height: 300px; background-position: center center; padding-top: 80px;
     .title-cit{position: relative;text-align: center; line-height:40px; font-size: 24px; font-family: 'Futura', sans-serif; color:white; font-weight: 300; padding-bottom: 22px;    letter-spacing: 2px;
@@ -191,6 +189,12 @@ input[type="file"]{ width: 0; opacity: 0;}
     }
     .under-all{width: 100%; text-align: center; font-size: 14px; font-family: 'Roboto', sans-serif; font-weight: 400; line-height: 30px;  background-color: rgba(0,0,0,0.4); }
 }
+.logo{width: 76px; height: 76px; border: 3px solid white; font-family: 'PFDinTextPro', sans-serif; font-size: 18px; line-height: 72px; font-weight: 700; border-radius: 50%; margin: 0 auto; margin-bottom: 30px; position: relative; cursor: pointer; display: block; text-decoration: none; color: white;
+    &:after{content: ''; position: absolute; left: -3px; right: -3px; top:-3px; bottom: -3px; border: 3px solid white;border-radius: 50%;  transition: all 0.5s; }
+    &:hover{
+        &:after{ left: -10px; right: -10px; top:-10px; bottom: -10px; border: 1px solid white;border-radius: 50%;  }
+    }
+}
 
 
 .polosa-wrap{ width: 100%;background-color: #2579bf;  min-height: 96px;
@@ -211,7 +215,7 @@ input[type="file"]{ width: 0; opacity: 0;}
     }
 }
 
-.slider-wrap{width: 100%;
+.slider-wrap{width: 100%; overflow: hidden;
     .convert-slider{width: 100%; padding-top: 100px; padding-bottom: 100px;
         .item{
             figure{display: table;
@@ -291,10 +295,18 @@ input[type="file"]{ width: 0; opacity: 0;}
         .cell-num{display: table-cell; width: 30%;vertical-align: middle; text-align: right; padding-right: 60px; }
     }
     .row-last{width: 100%; text-align: center; padding-top: 20px;
-        .itog{float: right; max-width: 240px; font-size: 24px; font-family: 'Roboto', sans-serif; color:#002d3b; font-weight: 700;
+        .itog{float: right; max-width: 310px; font-size: 24px; font-family: 'Roboto', sans-serif; color:#002d3b; font-weight: 700; width: 100%;
             .text-itog{border-bottom: 1px solid #b0c1c6;  padding-top: 10px; padding-bottom: 10px;}
             .price-yop{padding-top: 10px;}
         }
+    }
+}
+
+#call-popup{ max-width: 800px; min-width: 300px; width: 800px; border-radius: 5px; background-color: white;
+    .head-block-pup{min-height: 150px; text-align: center; padding-top: 30px;background-image: url(../images/popup-bg.jpg); background-position: center center;background-size: 102%;}
+    .contact-form-title{font-size: 20px; font-family: 'Roboto', sans-serif; color:#4f4f4f; font-weight: 700; text-align: center;}
+    .contact-form{max-width: 320px; margin: 0 auto;
+        .contact-form-item{padding: 10px;}
     }
 }
 
