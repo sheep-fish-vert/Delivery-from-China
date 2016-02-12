@@ -256,7 +256,7 @@ input[type="file"]{ width: 0; opacity: 0;}
     }
 }
 
-.calculus-wrap{ width: 100%; background-image: url(../images/dragoon.jpg); background-position: left bottom; background-repeat:  no-repeat; padding-bottom: 40px; padding-top: 40px;
+.calculus-wrap{ width: 100%; background-image: url(../images/dragoon.jpg); background-position: left bottom; background-repeat:  no-repeat; padding-bottom: 40px;padding-top: 95px;
     .conteiner{ max-width: 800px; margin: 0 auto;
         .magik-disk{position: absolute; top: 10px; left: 60px; z-index: 102; font-size: 14px; font-family: 'Roboto', sans-serif; color:#002d3b; font-weight: 700;}
         .magik-disk-2{position: absolute; top: 10px; left: 60px; z-index: 5;font-size: 14px; font-family: 'Roboto', sans-serif; color:#002d3b; font-weight: 700;}
@@ -293,9 +293,15 @@ input[type="file"]{ width: 0; opacity: 0;}
         }
     }
 }
+.calculus-wrap .conteiner .conteiner-form .nerd-iye { padding-top: 60px; padding-bottom: 10px;}
 
+<<<<<<< HEAD
 .block-req{width: 100%; padding-top: 40px;
     .row{width: 100%; border-bottom: 1px solid #b0c1c6; display: table; min-height: 44px;font-size: 14px; font-family: 'Roboto', sans-serif; color:#002d3b; font-weight: 700;background-color: white;
+=======
+.block-req{width: 100%; padding-top: 40px; padding-bottom: 20px;
+    .row{width: 100%; border-bottom: 1px solid #b0c1c6; display: table; min-height: 50px;font-size: 14px; font-family: 'Roboto', sans-serif; color:#002d3b; font-weight: 700;
+>>>>>>> 3b23d4dc7af87f41cb16e8708e89adf020b460b1
         .cell-text{display: table-cell; width: 70%; vertical-align: middle;text-align: left; padding-left: 60px; padding-right: 20px;}
         .cell-num{display: table-cell; width: 30%;vertical-align: middle; text-align: right; padding-right: 60px; }
     }
