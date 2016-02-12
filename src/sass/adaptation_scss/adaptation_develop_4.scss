@@ -74,12 +74,16 @@
         .top-row .right-menu-header .tel-block{margin: 0 10px}
         .top-row .right-menu-header .convert-button{margin: 0 10px;}
         .citata-row{padding-top: 90px;}
-        .menu-row{top: 190px;max-width: 100%;width: 100%;}
+        .menu-row{top: 190px;max-width: 100%;}
         .citata-row .wrap-cit .title-cit{font-size: 24px;line-height: 31px;}
         .citata-row .wrap-cit .aftr-name {font-size: 22px;padding-top: 5px;}
         .top-row .convert-logo .description{padding-top: 5px;line-height: 30px;}
     }
     /*/header*/
+
+    /*fancybox*/
+    .fancybox-form .contact-form{padding:0 10px;}
+    /*/fancybox*/
 }
 @media screen and (max-width: 387px){
     /*header*/
