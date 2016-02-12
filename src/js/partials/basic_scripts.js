@@ -100,6 +100,7 @@ function cutText(){
 /* DOCUMENT READY  */
 $(document).ready(function() {
     //oneHeightItems();
+    scrollUp('.go_to_convert_zayavka','.convert-zayavka');
     $('.footer_placeholder').height($('.footer').outerHeight());
 
     goTo();
