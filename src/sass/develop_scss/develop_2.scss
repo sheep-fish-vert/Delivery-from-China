@@ -114,7 +114,7 @@ input[type="file"]{ width: 0; opacity: 0;}
 }
 
 
-.wrap-cit{width: 100%; height: 300px; background-position: center center; padding-top: 80px;
+.wrap-cit{width: 100%; height: 300px; background-position: center center; padding-top: 80px;background-attachment: fixed;
     .title-cit{position: relative;text-align: center; line-height:40px; font-size: 24px; font-family: 'Futura', sans-serif; color:white; font-weight: 300; padding-bottom: 22px;    letter-spacing: 2px;
         &:after{content: ''; position: absolute; bottom: 0; left: calc(50% - 100px/2); width: 100px; height: 2px;background-color: rgba(255, 255, 255,0.5); }
     }
@@ -321,7 +321,7 @@ input[type="file"]{ width: 0; opacity: 0;}
 }
 
 
-.header-wrap{ width: 100%; position: relative; background-image: url(../images/header-bg.jpg); background-repeat: no-repeat;color: white; padding-bottom: 37px;  padding-top: 10px;
+.header-wrap{ width: 100%; position: relative; background-image: url(../images/header-bg.jpg); background-repeat: no-repeat;color: white; padding-bottom: 37px;  padding-top: 10px;background-attachment: fixed;
     .menu-mobile{display: none;}
     .wrap-cit .title-cit:after {background-color: #00b7f4;}
     .top-row{text-align: center;
