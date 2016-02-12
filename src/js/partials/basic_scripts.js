@@ -69,11 +69,16 @@ function animationBlock(item){
 
 /*GO TO href*/
 function goTo(){
-    $('.header-menu a').click(function(e){
+    $('.main-menu a').click(function(e){
         e.preventDefault();
         var href = $(this).attr('href');
         var target = $(href).offset().top-65;
-        $(scroller).animate({scrollTop:target},500);
+        $('body,html').animate({scrollTop:target},500,function(){
+            if($(window).width()<1024){
+                $('.menu-row>.mbox').slideUp();
+                $('.menu-mobile').removeClass('active');
+            }
+        });
     });
 }
 
@@ -97,7 +102,7 @@ $(document).ready(function() {
     //oneHeightItems();
     $('.footer_placeholder').height($('.footer').outerHeight());
 
-    //goTo();
+    goTo();
     //animationBlock($('.setion-animate'));
 });
 
