@@ -295,8 +295,8 @@ input[type="file"]{ width: 0; opacity: 0;}
 }
 .calculus-wrap .conteiner .conteiner-form .nerd-iye { padding-top: 60px; padding-bottom: 10px;}
 
-.block-req{width: 100%; padding-top: 40px; padding-bottom: 20px;
-    .row{width: 100%; border-bottom: 1px solid #b0c1c6; display: table; min-height: 50px;font-size: 14px; font-family: 'Roboto', sans-serif; color:#002d3b; font-weight: 700;
+.block-req{width: 100%; padding-top: 40px;
+    .row{width: 100%; border-bottom: 1px solid #b0c1c6; display: table; min-height: 44px;font-size: 14px; font-family: 'Roboto', sans-serif; color:#002d3b; font-weight: 700;background-color: white;
         .cell-text{display: table-cell; width: 70%; vertical-align: middle;text-align: left; padding-left: 60px; padding-right: 20px;}
         .cell-num{display: table-cell; width: 30%;vertical-align: middle; text-align: right; padding-right: 60px; }
     }
@@ -321,8 +321,8 @@ input[type="file"]{ width: 0; opacity: 0;}
 }
 
 
-.header-wrap{ width: 100%; position: relative; background-image: url(../images/header-bg.jpg); background-repeat: no-repeat;
-    color: white; padding-bottom: 37px;  padding-top: 10px;
+.header-wrap{ width: 100%; position: relative; background-image: url(../images/header-bg.jpg); background-repeat: no-repeat;color: white; padding-bottom: 37px;  padding-top: 10px;
+    .menu-mobile{display: none;}
     .wrap-cit .title-cit:after {background-color: #00b7f4;}
     .top-row{text-align: center;
         .convert-logo{float: left; padding-top: 7px;

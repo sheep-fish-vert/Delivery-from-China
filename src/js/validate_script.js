@@ -225,10 +225,19 @@ $(document).ready(function(){
     Maskedinput();
     fancyboxForm();
 
-    $('input[name=tammozhna]').keydown(function(){
+    // $('input[name=tammozhna]').keydown(function(){
+    //     $(this).val($(this).val().replace(/[^\d]/,''));
+    // });
+
+    // $('input[name=tammozhna]').keyup(function(){
+    //     $(this).val($(this).val().replace(/[^\d]/,''));
+    // });
+    $('.calculus-wrap .form_input input[type=text]').keydown(function(){
         $(this).val($(this).val().replace(/[^\d]/,''));
+        console.log($(this).val($(this).val().replace(/[^\d]/,'')));
     });
-    $('input[name=tammozhna]').keyup(function(){
+
+    $('.calculus-wrap .form_input input[type=text]').keyup(function(){
         $(this).val($(this).val().replace(/[^\d]/,''));
     });
 
