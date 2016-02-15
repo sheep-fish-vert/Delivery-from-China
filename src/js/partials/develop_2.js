@@ -13,7 +13,14 @@ $(window).load(function(){
 
     $('.add-file-config').click(function(){
         $('input[type="file"]').click();
-    })
+    });
+
+    $('.contact-form-item-file[type="file"]').change(function(){
+       var file = $(this)[0].files[0].name;
+       var tag = $('<div class="name_of_file"></div>');
+       tag.text(file+'*');
+       $('.contact-form-item-file[type="file"]').parent().append(tag);
+    });
 });
 
 $(window).resize(function(){

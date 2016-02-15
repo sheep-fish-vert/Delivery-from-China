@@ -30,7 +30,13 @@ function scrollButer(){
     });
 }
 
+function scrollReveal(){
+    window.sr = ScrollReveal();
+    sr.reveal('.scrollanim');
+}
+
 $(document).ready(function(){
+    scrollReveal();
     headeButer();
     scrollButer();
 });
