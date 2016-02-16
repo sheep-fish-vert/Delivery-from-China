@@ -19,6 +19,16 @@
         .header-wrap .citata-row .wrap-cit .title-cit{font-size: 29px;}
     }
     /*/header*/
+
+    /*clients-wrap*/
+    .clients-wrap .client-row{padding-left: 30px;padding-right: 30px;}
+    .clients-wrap{
+        .slick-prev{left: 0;}
+        .slick-next {right: 0px;}
+        .client-row .item{display: table;height: 100%;margin: 0 auto;height: 100px;}
+    }
+
+    /*/clients-wrap*/
 }
 @media screen and (max-width: 992px){
     /*header*/
