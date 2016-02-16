@@ -54,6 +54,7 @@ function mapInit(mapWrap){
 
             });
 
+
         }
 
         initialize();
