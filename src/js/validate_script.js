@@ -234,7 +234,7 @@ function fancyboxForm2(){
 $(document).ready(function(){
     validate('.zayavka', {submitFunction:validationCallDoc});
     validate('#call-popup .contact-form', {submitFunction:validationCall});
-
+    validate('#call-tovar .contact-form', {submitFunction:validationCall});
     validate('.calculus-form', {submitFunction:calculatorLiloAndStich});
 
     Maskedinput();
