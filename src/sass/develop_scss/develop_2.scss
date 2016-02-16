@@ -8,7 +8,7 @@
 }
 
 .hand-of-god{
-    .conteiner{ padding: 82px 0; min-height: 410px;
+    .conteiner{ padding: 50px 0; min-height: 366px;
         .row-items{padding-bottom: 40px;}
         .row-4-items{padding-bottom: 40px;
             .item{float: left; width: 22%;margin: 0 calc(12%/8);}
@@ -114,7 +114,7 @@ input[type="file"]{ width: 0; opacity: 0;}
 }
 
 
-.wrap-cit{width: 100%; height: 300px; background-position: center center; padding-top: 80px;background-attachment: fixed;position: relative;
+.wrap-cit{width: 100%; height: 300px; background-position: center center; padding-top: 72px;background-attachment: fixed;position: relative;
     &>.mbox{position: static;
         &:before{position: absolute;top: 0;left: 0;width: 100%;height: 100%;opacity: 0;transition:all ease .5s;background-color: rgba(0,0,0, .4);content: '';}
         &.showing{
