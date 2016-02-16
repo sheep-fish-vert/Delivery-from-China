@@ -114,11 +114,20 @@ input[type="file"]{ width: 0; opacity: 0;}
 }
 
 
-.wrap-cit{width: 100%; height: 300px; background-position: center center; padding-top: 80px;background-attachment: fixed;
+.wrap-cit{width: 100%; height: 300px; background-position: center center; padding-top: 80px;background-attachment: fixed;position: relative;
+    &>.mbox{position: static;
+        &:before{position: absolute;top: 0;left: 0;width: 100%;height: 100%;opacity: 0;transition:all ease .5s;background-color: rgba(0,0,0, .4);content: '';}
+        &.showing{
+            &:before{opacity: 1;}
+        }
+    }
     .title-cit{position: relative;text-align: center; line-height:40px; font-size: 24px; font-family: 'Futura', sans-serif; color:white; font-weight: 300; padding-bottom: 22px;    letter-spacing: 2px;
         &:after{content: ''; position: absolute; bottom: 0; left: calc(50% - 100px/2); width: 100px; height: 2px;background-color: rgba(255, 255, 255,0.5); }
     }
     .aftr-name{text-align: center; line-height:40px; font-size: 18px; font-family: 'Roboto', sans-serif; color:white; font-weight: 700; padding-bottom: 22px; padding-top: 20px;}
+    .conteiner{position: static;
+        // &:before{position: absolute;top: 0;left: 0;width: 100%;height: 100%;opacity: 1;transition:all ease .3s;background-color: rgba(0,0,0, .4);content: '';}
+    }
 }
 .cit1{background-image: url(../images/citata1.jpg);}
 .cit2{background-image: url(../images/citata2.jpg);

@@ -33,6 +33,12 @@ function scrollButer(){
 function scrollReveal(){
     window.sr = ScrollReveal();
     sr.reveal('.scrollanim');
+    sr.reveal('.scrolltitle', {
+        delay    : 500,
+        afterReveal : function( domEl ){
+            $(domEl).parent().addClass('showing');
+        }
+    });
 }
 
 
