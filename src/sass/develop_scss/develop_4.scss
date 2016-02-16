@@ -1,3 +1,19 @@
 /*name_of_file*/
 .name_of_file{position: absolute;top: 90%;right: 0;color: #00B7F4;}
 /*/name_of_file*/
+
+/*ourclients*/
+.clients-wrap{width: 100%; padding-bottom: 70px;overflow: hidden;
+    .client-row{ padding-bottom: 20px; padding-top: 60px;max-width: 1030px;margin: 0 auto;width: 100%;
+        .item{float: left; width: 21%; margin: 0 0.5%;height: 140px;display: table;
+            a{display: table-cell;vertical-align: middle;text-align: center;}
+            img{display: inline-block;}
+        }
+        .slick-prev, .slick-next{height: 25px;width: 25px;border-left: 2px solid #ff0000;border-bottom: 2px solid #ff0000;transform: translate(0, 0%) rotate(45deg);top: 55%;transition:all ease .2s;
+            &:hover{border-left: 2px solid rgba(255, 0, 0, 0.77);border-bottom: 2px solid rgba(255, 0, 0, 0.77);}
+            &:active{top: 56%;}
+        }
+        .slick-next{transform: translate(0, 0%) rotate(-135deg);}
+    }
+}
+/*/ourclients*/
