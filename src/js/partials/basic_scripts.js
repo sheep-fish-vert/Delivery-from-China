@@ -82,6 +82,16 @@ function goTo(){
     });
 }
 
+function goTo2(){
+    $('.block2-wrap a').click(function(e){
+        console.log('dfgdfgdfg');
+        e.preventDefault();
+        var href = $(this).attr('href');
+        var target = $(href).offset().top-65;
+        $('body,html').animate({scrollTop:target},500,function(){ });
+    });
+}
+
 // cut text script
 
 function cutText(){
@@ -104,6 +114,7 @@ $(document).ready(function() {
     $('.footer_placeholder').height($('.footer').outerHeight());
 
     goTo();
+    goTo2();
     //animationBlock($('.setion-animate'));
 });
 

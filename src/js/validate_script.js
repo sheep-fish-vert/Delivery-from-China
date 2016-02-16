@@ -216,6 +216,21 @@ function fancyboxForm(){
   })
 }
 
+function fancyboxForm2(){
+  $('.fancybox').fancybox({
+    openEffect  : 'fade',
+    closeEffect : 'fade',
+    autoResize:true,
+    wrapCSS:'fancybox-form-tovar',
+    'closeBtn' : true,
+    fitToView:true,
+    afterClose : function() {
+        $('#call-tovar>.tovar-block').html('') ;
+    },
+    padding: '0'
+    });
+}
+
 $(document).ready(function(){
     validate('.zayavka', {submitFunction:validationCallDoc});
     validate('#call-popup .contact-form', {submitFunction:validationCall});
@@ -224,6 +239,7 @@ $(document).ready(function(){
 
     Maskedinput();
     fancyboxForm();
+    fancyboxForm2();
 
     // $('input[name=tammozhna]').keydown(function(){
     //     $(this).val($(this).val().replace(/[^\d]/,''));
@@ -234,7 +250,6 @@ $(document).ready(function(){
     // });
     $('.calculus-wrap .form_input input[type=text]').keydown(function(){
         $(this).val($(this).val().replace(/[^\d]/,''));
-        console.log($(this).val($(this).val().replace(/[^\d]/,'')));
     });
 
     $('.calculus-wrap .form_input input[type=text]').keyup(function(){

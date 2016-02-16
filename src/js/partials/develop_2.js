@@ -6,6 +6,11 @@ $(document).ready(function(){
         slidesToShow: 1
     });
 
+    $('.fancybox').click(function() {
+        var items = $(this).closest('.item').clone();
+        $('#call-tovar>.tovar-block').append(items);
+    });
+
 });
 
 $(window).load(function(){
