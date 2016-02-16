@@ -18,7 +18,7 @@
 
 }
 @media screen and (max-width: 1024px){
-
+    .contact-map .contact-map-title .title-text{padding-top: 0px;}
 }
 @media screen and (max-width: 992px){
     #call-popup{ width: 100%;}
@@ -30,6 +30,8 @@
             .contact-form{display: block; width: 100%; max-width: 300px;}
         }
     }
+
+    .block2-wrap.hand-of-god .conteiner{padding: 48px 0 66px;min-height: auto;}
 }
 @media screen and (max-width: 767px){
     .block-req .row-last .itog {margin: 0 auto; float: none;}

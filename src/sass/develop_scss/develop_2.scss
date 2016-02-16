@@ -8,12 +8,12 @@
 }
 
 .hand-of-god{
-    .conteiner{ padding: 50px 0; min-height: 366px;
-        .row-items{padding-bottom: 40px;}
+    .conteiner{ padding: 80px 0 87px; min-height: 366px;
+        .row-items{padding-bottom: 65px;}
         .row-4-items{padding-bottom: 40px;
             .item{float: left; width: 22%;margin: 0 calc(12%/8);}
         }
-        .adofix{margin-bottom: 40px;}
+        .adofix{margin-bottom: 63px;}
         .item{float: left; width: 30%; margin: 0 calc(10%/6);
             .top-img-block{ width: 100%; border: 2px solid #e8e8e8; position: relative;
                 img{width: 100%; height: 100%;}
@@ -31,6 +31,7 @@
         }
     }
 }
+.uslugi-wrap.hand-of-god{padding-bottom: 31px;}
 .uslugi-wrap.hand-of-god,  .special-wrap.hand-of-god {
     .conteiner .item .top-img-block{
         a {background-color: rgba(60, 103, 176, 0); right: calc(50% - 140px/2); color: transparent;}
@@ -40,6 +41,11 @@
 .uslugi-wrap .conteiner .item .after-text{ font-size: 18px; font-family: 'Roboto', sans-serif; color: #4f4f4f; font-weight: 700;}
 .special-wrap .conteiner .item .after-text{ text-align: center; font-size: 24px; font-family: 'Roboto', sans-serif; color: #4f4f4f; font-weight: 700;}
 
+.special-wrap.hand-of-god{
+    .mbox{max-width: 1035px;}
+    .conteiner{    padding: 80px 0 59px;}
+    .conteiner .row-items{padding-bottom: 44px}
+}
 /* form */
 
 input[type="file"]{ width: 0; opacity: 0;}
@@ -140,7 +146,8 @@ input[type="file"]{ width: 0; opacity: 0;}
 
 
 .why-we-wrap{width: 100%; padding-top: 86px;
-    .row-con{ width: 100%; padding: 40px 0;
+    .title-text{margin-bottom: 38px;}
+    .row-con{ width: 100%; padding: 24px 0;
         .item{width: 24%;  float: left; height: 275px;position: relative; margin: 0 calc(4%/8);
             .carkas{margin: 0 auto; width: 80%; border: 1px solid #f3f3f3;height: 275px;position: relative;
                 &:after{content: ''; position: absolute; top: 14px; bottom: 14px; left: 11px; right: 11px; border: 11px solid #f3f3f3; }
@@ -249,7 +256,7 @@ input[type="file"]{ width: 0; opacity: 0;}
         }
 
     }
-    .after-texter{font-size: 36px; font-family: 'Roboto', sans-serif;  font-weight: 400; text-align: center; padding-top: 20px;  padding-bottom: 20px;}
+    .after-texter{font-size: 36px; font-family: 'Roboto', sans-serif;  font-weight: 400; text-align: center; padding-top: 29px;  padding-bottom: 22px;}
     .slick-dots { bottom: 0; height: 75px; line-height: 75px;
         li.slick-active button:before{background-color: #f24841; border:2px solid #f24841; }
         li button:before {content: ''; transition: all 0.5s; background-color: transparent; border:2px solid #bdbdbd; border-radius: 50%; width: 10px;  height: 10px; opacity: 1;}
@@ -257,7 +264,7 @@ input[type="file"]{ width: 0; opacity: 0;}
     }
 }
 
-.calculus-wrap{ width: 100%; background-image: url(../images/dragoon.jpg); background-position: left bottom; background-repeat:  no-repeat; padding-bottom: 40px;padding-top: 95px;
+.calculus-wrap{ width: 100%; background-image: url(../images/dragoon.jpg); background-position: left bottom; background-repeat:  no-repeat; padding-bottom: 81px;padding-top: 95px;
     .conteiner{ max-width: 800px; margin: 0 auto;
         .magik-disk{position: absolute; top: 10px; left: 60px; z-index: 102; font-size: 14px; font-family: 'Roboto', sans-serif; color:#002d3b; font-weight: 700;}
         .magik-disk-2{position: absolute; top: 10px; left: 60px; z-index: 5;font-size: 14px; font-family: 'Roboto', sans-serif; color:#002d3b; font-weight: 700;}
@@ -370,4 +377,8 @@ input[type="file"]{ width: 0; opacity: 0;}
 
         }
     }
+}
+
+.block2-wrap.hand-of-god{
+    .conteiner {padding: 48px 0 87px;}
 }
