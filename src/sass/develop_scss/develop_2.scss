@@ -100,7 +100,9 @@ input[type="file"]{ width: 0; opacity: 0;}
             .mainn-block-form{padding-bottom: 37px;}
             .contact-form-item{ width: 100%; padding-bottom: 23px; float: left;position: relative;
 
-                a{text-decoration: none; display: block; width: 165px; line-height: 42px;font-size: 14px; font-family: 'Roboto', sans-serif; color:#ffffff; font-weight: 500; background-color:  #00b7f4; text-align: center; float: right; cursor: pointer; }
+                a{text-decoration: none; display: block; width: 165px; line-height: 42px;font-size: 14px; font-family: 'Roboto', sans-serif; color:#ffffff; font-weight: 500; background-color:  #00b7f4; text-align: center; float: right; cursor: pointer; transition: all 0.5s;
+                    &:hover{background-color:#107B9F ; }
+                }
             }
             .row-part1{max-width: 48%;  float: left;}
             .row-part2{max-width: 48%; float: right;}
@@ -341,13 +343,16 @@ input[type="file"]{ width: 0; opacity: 0;}
     }
 }
 
-.fancybox-form-tovar .fancybox-close, .fancybox-form .fancybox-close{background-image: none; top: 20px ; right: 20px; width:45px; height: 45px;  background-color: #ffffff; border-radius: 50%;
-    &:after{content: ''; width: 1px; height: 25px; position: absolute; top: 10px; right: 22px; background-color: black; transform: rotate(45deg); }
-    &:before{content: ''; width: 1px; height: 25px; position: absolute; top: 10px; right: 22px; background-color: black; transform: rotate(-45deg);}
+.fancybox-form-tovar .fancybox-close, .fancybox-form .fancybox-close{background-image: none; top: 20px ; right: 20px; width:45px; height: 45px;  background-color: #ffffff; border-radius: 50%; transition: all 0.5s;
+    &:after{content: ''; width: 1px; height: 25px; position: absolute; top: 10px; right: 22px; background-color: black; transform: rotate(45deg); transition: all 0.5s;}
+    &:before{content: ''; width: 1px; height: 25px; position: absolute; top: 10px; right: 22px; background-color: black; transform: rotate(-45deg);  transition: all 0.5s;}
+    &:hover{background-color: #f24841;
+        &:after{background-color: white;}
+        &:before{background-color: white;}
+    }
 }
-.fancybox-form-tovar .fancybox-close {background-color: #f24841;}
 .fancybox-form-tovar .fancybox-skin {background: white;}
-.fancybox-form-tovar .fancybox-close:before, .fancybox-form-tovar .fancybox-close:after {background-color: white;}
+
 
 .header-wrap{ width: 100%; position: relative; background-image: url(../images/header-bg.jpg); background-repeat: no-repeat;color: white; /*padding-bottom: 37px; */ padding-top: 10px;background-attachment: fixed;
     .menu-mobile{display: none;}
