@@ -54,6 +54,8 @@ function mapInit(mapWrap){
 
             });
 
+            infowindow.open(map,marker);
+
 
         }
 
