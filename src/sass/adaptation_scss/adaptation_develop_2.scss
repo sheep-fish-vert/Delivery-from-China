@@ -23,7 +23,13 @@
 @media screen and (max-width: 992px){
     #call-popup{ width: 100%;}
     #call-popup .head-block-pup { background-size: auto;}
-
+    .fancybox-form-tovar{max-width: 400px; width:  100% !important;
+        .fancybox-inner{background-color: white; margin: 0 auto;}
+        #call-tovar { width: 100%; min-width: 300px;
+            .tovar-block{ display: block; width: 100%; max-width: 300px;}
+            .contact-form{display: block; width: 100%; max-width: 300px;}
+        }
+    }
 }
 @media screen and (max-width: 767px){
     .block-req .row-last .itog {margin: 0 auto; float: none;}
@@ -110,6 +116,14 @@
     }
     .wrap-cit { padding-top: 30px;}
     #zayavka .conteiner-zayavka .convert-form .contact-form-item a { width: 100%;}
+
+    .fancybox-form-tovar{max-width: 260px; width:  100% !important;
+        .fancybox-inner{background-color: white; margin: 0 auto;}
+        #call-tovar { width: 100%; min-width: 260px;
+            .tovar-block{ display: block; width: 100%; max-width: 260px;}
+            .contact-form{display: block; width: 100%; max-width: 260px;}
+        }
+    }
 }
 @media screen and (max-width: 320px){
 
