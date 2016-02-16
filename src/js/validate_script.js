@@ -154,6 +154,54 @@ function calculatorLiloAndStich(form){
 }
 
 /*Отправка формы с вызовом попапа*/
+
+
+
+function validationCallItem(form){
+
+  var thisForm = $(form);
+  var formSur = thisForm.serialize() + '&item_u_need='+ ' Заказать ' + afterText ;
+  console.log(formSur);
+
+    $.ajax({
+        url : thisForm.attr('action'),
+        data: formSur,
+        method:'POST',
+        success : function(data){
+            if ( data.trim() == 'true') {
+                thisForm.trigger("reset");
+                popNext();
+            }
+            else {
+               thisForm.trigger('reset');
+            }
+
+        }
+    });
+
+    function popNext(){
+        $.fancybox.open("#call_success",{
+            padding:0,
+            fitToView:false,
+            wrapCSS:"call-popup-success",
+            autoSize:true,
+            afterClose: function(){
+                $('form').trigger("reset");
+                clearTimeout(timer);
+            }
+        });
+        var timer = null;
+
+        timer = setTimeout(function(){
+            $('form').trigger("reset");
+            $.fancybox.close("#call_success");
+        },2000);
+
+
+    }
+}
+
+
 function validationCall(form){
 
   var thisForm = $(form);
@@ -234,7 +282,7 @@ function fancyboxForm2(){
 $(document).ready(function(){
     validate('.zayavka', {submitFunction:validationCallDoc});
     validate('#call-popup .contact-form', {submitFunction:validationCall});
-    validate('#call-tovar .contact-form', {submitFunction:validationCall});
+    validate('#call-tovar .contact-form', {submitFunction:validationCallItem});
     validate('.calculus-form', {submitFunction:calculatorLiloAndStich});
 
     Maskedinput();

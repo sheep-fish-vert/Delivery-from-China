@@ -5,6 +5,10 @@
     if(isset($_POST['info'])) {
         $subject = $_POST['info'];
     }
+    if(isset($_POST['item_u_need'])) {
+        $name = substr(htmlspecialchars(trim($_POST['item_u_need'])), 0, 100);
+        $mess .= '<b>Запрос:</b>' . $name . '<br>';
+    }
     if(isset($_POST['contact_name'])) {
         $name = substr(htmlspecialchars(trim($_POST['contact_name'])), 0, 100);
         $mess .= '<b>Имя:</b>' . $name . '<br>';
@@ -22,7 +26,7 @@
     require 'class.phpmailer.php';
 
     $mail = new PHPMailer();
-    $mail->AddAddress('dmitry1940@mail.ru','');   // кому - адрес, Имя
+    $mail->AddAddress('artem.garmatyk@gmail.com','');   // кому - адрес, Имя
     $mail->IsHTML(true);                        // выставляем формат письма HTML
     $mail->Subject = $subject; // тема письма
     $mail->CharSet = "UTF-8";                   // кодировка

@@ -1,3 +1,5 @@
+var afterText ;
+
 $(document).ready(function(){
     $('#slider .convert-slider').slick({
         dots: true,
@@ -9,7 +11,7 @@ $(document).ready(function(){
     $('.fancybox').click(function() {
         var items = $(this).closest('.item').clone();
         $('#call-tovar>.tovar-block').append(items);
-        var afterText = $(this).closest('.item').find('.after-text').html();
+        afterText = $(this).closest('.item').find('.after-text').html();
         $('.contact-form-title>h5').html('Заказать ' + afterText);
     });
 
