@@ -21,7 +21,37 @@ $(document).ready(function(){
         var terew = $(this).attr('data-slide') - 1;
         $('.slick-dots>li').eq( terew ).click();
     })
+    
+    
+    
 
+});
+$(window).scroll(function(){
+    if (($('.cit1').offset().top - $(window).scrollTop() + 300)< 0 ) {
+        $('.cit1').css({
+            "height": 'auto',
+            "padding-top": '0'
+        })
+    };
+    
+    if (($('.cit2').offset().top - $(window).scrollTop() + 300)< 0 ) {
+        $('.cit2').css({
+            "height": 'auto',
+            "padding-top": '0'
+        })
+    };
+    if (($('.cit3').offset().top - $(window).scrollTop() + 300)< 0 ) {
+        $('.cit3').css({
+            "height": 'auto',
+            "padding-top": '0'
+        })
+    }
+    if (($('.cit4').offset().top - $(window).scrollTop() + 300)< 0 ) {
+        $('.cit4').css({
+            "height": 'auto',
+            "padding-top": '0'
+        })
+    }
 });
 
 $(window).load(function(){

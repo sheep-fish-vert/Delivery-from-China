@@ -31,5 +31,13 @@
         }
         .custom-close{right:20px!important;top:15px!important;}
     }
+    #contact-map{
+        .button{min-width: 240px;
+            a{text-decoration: none; color: #4f4f4f;
+                &:hover{color: white;}
+            }
+        }
+    }
+    
 
 /* /contact-map */

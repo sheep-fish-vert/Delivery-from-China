@@ -36,6 +36,7 @@
 
     .block2-wrap.hand-of-god .conteiner{padding: 48px 0 66px;min-height: auto;}
     .why-we-wrap .row-con .item .carkas { width: 100%;}
+    #contact-map .button { right: 10%;  left: 10%; bottom: 10px;}
 }
 @media screen and (max-width: 767px){
     .block-req .row-last .itog {margin: 0 auto; float: none;}
@@ -54,7 +55,7 @@
 
     .footer-wrap .topest-block { position: relative;
         .item{float: none; text-align: center; width: 100%;
-            &:nth-child(1){position: absolute; top: 130px; }
+            &:nth-child(1){position: absolute; top: 130px; z-index: 10; }
             &:nth-child(2){padding-bottom: 110px; }
             .text-alone {text-align: center; padding-bottom: 20px; padding-top: 0px; }
             .button { margin-bottom: 20px;}
