@@ -11,10 +11,13 @@
     #zayavka:before{left: 0;}
     #zayavka:after{right: 0;}
     .why-we-wrap .row-con { padding: 0;
-        .item { width: 40%; margin: 20px calc(20%/4);}
+        .item { width: 30%; margin: 20px calc(10%/6);}
     }
+    .why-we-wrap .row-con-3-items .item:first-child {margin: 20px calc(10%/6); }
+    /*
     .why-we-wrap .row-con-3-items .item:first-child { margin-left: calc(20%/4);}
     .why-we-wrap .row-con-3-items .item:last-child { margin-left: calc(60%/2);}
+    */
 
 }
 @media screen and (max-width: 1024px){
@@ -32,6 +35,7 @@
     }
 
     .block2-wrap.hand-of-god .conteiner{padding: 48px 0 66px;min-height: auto;}
+    .why-we-wrap .row-con .item .carkas { width: 100%;}
 }
 @media screen and (max-width: 767px){
     .block-req .row-last .itog {margin: 0 auto; float: none;}

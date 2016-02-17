@@ -5,7 +5,9 @@ $(document).ready(function(){
         dots: true,
         infinite: false,
         speed: 300,
-        slidesToShow: 1
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 2000
     });
 
     $('.fancybox').click(function() {
@@ -14,6 +16,11 @@ $(document).ready(function(){
         afterText = $(this).closest('.item').find('.after-text').html();
         $('.contact-form-title>h5').html('Заказать ' + afterText);
     });
+    
+    $('.slide-to').click(function(){
+        var terew = $(this).attr('data-slide') - 1;
+        $('.slick-dots>li').eq( terew ).click();
+    })
 
 });
 
