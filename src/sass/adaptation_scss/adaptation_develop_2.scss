@@ -37,8 +37,15 @@
     .block2-wrap.hand-of-god .conteiner{padding: 48px 0 66px;min-height: auto;}
     .why-we-wrap .row-con .item .carkas { width: 100%;}
     #contact-map .button { right: 10%;  left: 10%; bottom: 10px;}
+    
+   .header-wrap  .top-row .convert-logo .description{width: 70%;margin-left: 0;line-height: 34px;padding-top: 10px;}
+    .header-wrap  .top-row .convert-logo .logo{float: left;margin-bottom: 0;}
 }
 @media screen and (max-width: 767px){
+    .header-wrap .top-row .convert-logo .logo {  float: none;  display: block;  margin: 0 auto; }
+    .header-wrap .top-row .convert-logo .description { width: 100%; }
+    .header-wrap .top-row .convert-logo { float: none; width: 100%;}
+    
     .block-req .row-last .itog {margin: 0 auto; float: none;}
     .calculus-wrap {background-image: none;}
     .block-req .row .cell-text { padding-left: 10px; padding-right: 10px;}
@@ -89,6 +96,8 @@
         }
     }
      #zayavka .conteiner-zayavka .convert-form .nerd-iye {padding-top: 0;}
+    
+    
 
      // .clients-wrap .client-row .item { width: 40%; margin: 0 5%; padding-top: 30px;}
      // .clients-wrap .client-row .item:last-child{margin: 0 30%;}
@@ -111,6 +120,7 @@
     }
     .why-we-wrap .row-con-3-items .item:first-child { margin: 20px calc(20%/2);}
     .why-we-wrap .row-con-3-items .item:last-child { margin: 20px calc(20%/2);}
+   
 
 }
 @media screen and (max-width: 479px){
