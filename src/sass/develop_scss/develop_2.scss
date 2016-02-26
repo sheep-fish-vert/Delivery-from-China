@@ -188,7 +188,7 @@ input[type="file"]{ width: 0; opacity: 0;}
     .topest-block{min-height: 200px;
         .item{width: 33%; float: left; padding-top: 20px; text-align: center;
             .button{padding-top: 20px; margin-bottom: 40px;}
-            .logo{  margin: 0 auto; margin-bottom: 30px; position: relative; cursor: pointer; display: block; text-decoration: none; 
+            .logo{  margin: 0 auto; margin-bottom: 30px; position: relative; cursor: pointer; display: block; text-decoration: none;
             }
 
             .description{font-size: 18px; font-family: 'Roboto', sans-serif;  font-weight: 700;}
@@ -207,6 +207,7 @@ input[type="file"]{ width: 0; opacity: 0;}
 }
 */
 .logo{width: 76px; height: 76px; background-image: url(../images/logo.png); background-size: 100%;  background-repeat: no-repeat; background-position: center center; cursor: pointer; }
+.head-block-pup .logo{margin: 0 auto;}
 
 
 .description{font-size: 18px; font-family: 'Roboto', sans-serif;  font-weight: 700;}
@@ -214,7 +215,7 @@ input[type="file"]{ width: 0; opacity: 0;}
 
 .polosa-wrap{ width: 100%;background-color: #2579bf;  min-height: 96px;
     .conteiner{
-        .items{float: left; width: 25%; text-align: center;
+        .items{float: left; width: calc(100%/3); text-align: center;
             a{text-decoration: none; display: block;   font-size: 18px; font-family: 'Roboto', sans-serif; font-weight: 700; color: white; line-height: 96px; background-color: transparent; transition: all 0.5s;
                 span{padding-left: 36px;position: relative;
                     &:after{content: '';position: absolute; left: 0; top: calc(50% - 11px); width: 24px; height: 22px;background-repeat: no-repeat; background-position: center center; }
@@ -366,7 +367,9 @@ input[type="file"]{ width: 0; opacity: 0;}
         }
         .right-menu-header{ padding-top: 20px; margin-top: -9px;
             .tel-block{float: right;
-                a{margin-bottom: 10px;}
+                a{margin-bottom: 10px; line-height: 48px;
+                    &:after{top: 12px;}
+                }
             }
             .convert-button{float: right; min-width: 200px; margin-right: 15px; }
         }

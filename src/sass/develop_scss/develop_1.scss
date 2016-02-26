@@ -13,7 +13,7 @@
             #contact-map-main{height: 780px;width: 100%;}
         }
 
-        .gm-style-iw{background-color: rgba(255,255,255, .9);border-radius: 5px;padding: 35px 40px 45px 50px;font-family: "Roboto", sans-serif;
+        .gm-style-iw{background-color: rgba(255,255,255, .9);border-radius: 5px;padding: 35px 40px 45px 50px;font-family: "Roboto", sans-serif; min-width: 340px;
             .marker-town{text-align: center;color:#4f4f4f;font-size: 24px;font-weight: 700;position: relative;padding-bottom:25px;margin-bottom: 28px;
                 &:before{content: '';display: block;position: absolute;width: 50px;height: 1px;background-color: #d24a43;left:calc(50% - 25px);bottom:0px;}
             }
@@ -29,7 +29,7 @@
             }
 
         }
-        .custom-close{right:20px!important;top:15px!important;}
+        .custom-close{right:-60px!important;top:15px!important;}
     }
     #contact-map{
         .button{min-width: 240px;
@@ -38,6 +38,6 @@
             }
         }
     }
-    
+
 
 /* /contact-map */
