@@ -1,17 +1,17 @@
 .mbox {max-width: 1140px;}
-.title-text{ position: relative;text-align: center; line-height:40px; font-size: 30px; font-family: 'Roboto', sans-serif; color:#4f4f4f; font-weight: 400; padding-bottom: 22px;    letter-spacing: 2px;
+.title-text{ position: relative;text-align: center; line-height:40px; font-size: 30px; font-family: 'Open Sans', sans-serif; color:#4f4f4f; font-weight: 400; padding-bottom: 22px;    letter-spacing: 2px;
     &:after{content: ''; position: absolute; bottom: 0; left: calc(50% - 100px/2); width: 100px; height: 2px; background-color: #f24841; }
 }
 
-.send{ max-width: 280px ; display: block; width: 100%; line-height: 42px; border: 3px solid #f24841; border-radius: 25px; background-color: transparent; font-size: 16px; font-family: 'Roboto', sans-serif; font-weight: 700; text-align: center;margin: 0 auto; transition: all 0.3s; cursor: pointer;
+.send{ max-width: 280px ; display: block; width: 100%; line-height: 42px; border: 3px solid #f24841; border-radius: 25px; background-color: transparent; font-size: 16px; font-family: 'Open Sans', sans-serif; font-weight: 400; text-align: center;margin: 0 auto; transition: all 0.3s; cursor: pointer;
     &:hover{background-color: #f24841; color: white; }
 }
 
 .hand-of-god{
     .conteiner{ padding: 80px 0 87px; min-height: 366px;
         .row-items{padding-bottom: 65px;}
-        .row-4-items{padding-bottom: 40px;
-            .item{float: left; width: 22%;margin: 0 calc(12%/8);}
+        .row-4-items{padding-bottom: 40px; display: flex; justify-content: center;
+            .item{width: 22%;margin: 0 calc(12%/8);}
         }
         .adofix{margin-bottom: 63px;}
         .item{float: left; width: 30%; margin: 0 calc(10%/6);
@@ -157,7 +157,7 @@ input[type="file"]{ width: 0; opacity: 0;}
                 .magick-gick{position: absolute; bottom: 160px; width:4px; height: 4px; border-radius: 50%; background-color: #f24841;left: 50%; transform: translateX(-50%); }
                 &:before{content: ''; position: absolute;  border-radius: 50%; border:1px solid #f24841; left: 50%; transform: translateX(-50%); animation: pulse 1s linear infinite;  }
             }
-            p{position: absolute; transition: all 0.5s; width: 100%; text-align: center; background-color: white;font-size: 18px; font-family: 'Roboto', sans-serif; color:#4f4f4f; font-weight: 400; top: 170px;  opacity: 1; padding-left: 22px; padding-right: 22px;}
+            p{position: absolute; transition: all 0.5s; width: 100%; text-align: center; background-color: white;font-size: 18px; font-family: 'Roboto', sans-serif; color:#4f4f4f; font-weight: 400; top: 170px;  opacity: 1; z-index: 10; padding: 5px 0 ;}
         }
     }
     .row-con-3-items .item:first-child{margin-left: calc(12% + 4%/8 );}
@@ -175,7 +175,7 @@ input[type="file"]{ width: 0; opacity: 0;}
 }
 
 
-.call-me-maybe{text-decoration: none; color: white;  display: block; position: relative; max-width: 160px; margin: 0 auto;     line-height: 20px;padding-left: 30px; transition: all 0.5s;
+.call-me-maybe{text-decoration: none; color: white;  display: block; position: relative; max-width: 160px; margin: 0 auto;     line-height: 20px;padding-left: 30px; transition: all 0.5s; font-family:  'Open Sans', sans-serif;
     &:after{content: ''; position: absolute; left: 0; top: 0; width: 24px; height: 22px; background-image: url(../images/phone-ft.png); background-repeat: no-repeat; }
     &:hover{text-decoration: underline;}
 }
@@ -210,7 +210,7 @@ input[type="file"]{ width: 0; opacity: 0;}
 .head-block-pup .logo{margin: 0 auto;}
 
 
-.description{font-size: 18px; font-family: 'Roboto', sans-serif;  font-weight: 700;}
+.description{font-size: 18px; font-family: 'Open Sans', sans-serif;  font-weight: 700;}
 
 
 .polosa-wrap{ width: 100%;background-color: #2579bf;  min-height: 96px;
@@ -367,8 +367,8 @@ input[type="file"]{ width: 0; opacity: 0;}
         }
         .right-menu-header{ padding-top: 20px; margin-top: -9px;
             .tel-block{float: right;
-                a{margin-bottom: 10px; line-height: 48px;
-                    &:after{top: 12px;}
+                a{margin-bottom: 10px; line-height: 48px; font-size: 22px; display: block;  max-width: 300px; position: relative;
+                    &:after{top: 15px;}
                 }
             }
             .convert-button{float: right; min-width: 200px; margin-right: 15px; }
@@ -381,7 +381,7 @@ input[type="file"]{ width: 0; opacity: 0;}
     .menu-row{background-color: rgba(33, 56, 105,0.8);
         nav{  min-height: 75px;width: 100%; text-align: center;
             ul li{display: inline-block;
-                a{text-decoration: underline; color: white; display: block; font-family: 'Roboto', sans-serif; font-weight: 700; font-size: 18px;    padding: 26px 20px 27px; background-color: transparent; transition: all 0.5s;}
+                a{text-decoration: underline; color: white; display: block; font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 18px;    padding: 26px 20px 27px; background-color: transparent; transition: all 0.5s;}
                 a:hover{background-color: rgba(0,0,0,0.4); text-decoration: none;}
             }
 
